@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+ background: #111a35;
+    color: #e0e0e0; /* Light grey text for dark background */
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display:flex;
+    max-width: 1200px; /* Or a suitable max-width */
+    margin: 100px auto; /* Center the container */
+    padding: 0 20px; /* Add padding for responsiveness */
+    flex-wrap:wrap;
+    z-index: 1;
+}
+
+.container h1 {
+    font-size: 50px; 
+    margin:5px auto;
+}
+.container p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.left-content{
+    position: fixed;
+    width:50%;
+    height: 50%;
+}
+.left-content .selfie img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right-content {
+    margin-left: 50%;
+    width:50%;
+    z-index: 1;
+}
+.right-content h2{
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.right-content p {
+    font-size: large; /* Slightly larger font for readability */
+    line-height: 1.6; /* Improve readability with increased line height */
+    color: #cccccc; /* A slightly lighter grey for the text */
+}
+.right-sections{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+.right-sections ul {
+    list-style: square;
+    padding-left: 20px; 
+    margin: 0; /* Remove default margin */
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.right-sections li {
+margin-bottom: 20px; /* Add space between list items */
+ padding-left: 10px; 
+}
+
+.right-sections a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-sections a:hover {
+    color: #cccccc;
+}
+#resume{
+    display:inline-block;
+    border-radius:20px;
+    padding:15px;
+    margin:10px auto;
+    background: white;
+    color:#111a35;
+    font-size: large;
+}
+
+.socials {
+    display: flex;
+    gap: 20px; /* Adjust spacing between icons */ 
+    margin-top: 40px;
+}
+.socials a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00aaff;
+    transform: scale(1.1);
+}
+
+#status{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:darkgray;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: -1; /* Position behind other content */
+}
+.creds{
+    font-family: "Poppins";
+    position: fixed;
+    bottom: 20px;
+}
+strong{
+    color: white;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .left-content{
+        width:100%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .right-content{
+        width:100%;
+        margin-left: auto;
+
+    }
+    .creds{
+        position: relative;
+        margin:auto;
+        margin-top: 100px;
+    }
+}
